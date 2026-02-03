@@ -7,10 +7,7 @@ export const getMentorFeedback = async (
   context: string,
   userName: string
 ) => {
-  // Use a safety check for process.env while strictly adhering to the provided key source
-  const apiKey = typeof process !== 'undefined' && process.env ? process.env.API_KEY : '';
-  
-  const ai = new GoogleGenAI({ apiKey: apiKey || '' });
+  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
   
   const prompt = `
     You are "Kofi the Python Mentor", a friendly and warm Ghanaian programming teacher.

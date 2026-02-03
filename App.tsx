@@ -1,16 +1,16 @@
 
 import React, { useState, useEffect } from 'react';
-import { UserProgress, Lesson, Badge, LevelQuiz } from './types';
-import { LESSONS, BADGES, QUIZZES } from './constants';
-import Layout from './components/Layout';
-import QuestMap from './components/QuestMap';
-import Editor from './components/Editor';
-import Onboarding from './components/Onboarding';
-import QuizView from './components/QuizView';
-import Logo from './components/Logo';
-import DailyPlanView from './components/DailyPlanView';
-import PianoMelody from './components/PianoMelody';
-import { initPyodide } from './services/pyodideService';
+import { UserProgress, Lesson, Badge, LevelQuiz } from './types.ts';
+import { LESSONS, BADGES, QUIZZES } from './constants.tsx';
+import Layout from './components/Layout.tsx';
+import QuestMap from './components/QuestMap.tsx';
+import Editor from './components/Editor.tsx';
+import Onboarding from './components/Onboarding.tsx';
+import QuizView from './components/QuizView.tsx';
+import Logo from './components/Logo.tsx';
+import DailyPlanView from './components/DailyPlanView.tsx';
+import PianoMelody from './components/PianoMelody.tsx';
+import { initPyodide } from './services/pyodideService.ts';
 
 const INITIAL_USER: UserProgress = {
   name: '',

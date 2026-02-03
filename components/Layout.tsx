@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { UserProgress } from '../types';
-import Logo from './Logo';
+import { UserProgress } from '../types.ts';
+import Logo from './Logo.tsx';
 
 interface LayoutProps {
   children: React.ReactNode;

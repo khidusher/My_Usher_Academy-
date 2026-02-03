@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
-import { UserProgress } from '../types';
-import Logo from './Logo';
-import GhanaFlag from './GhanaFlag';
+import { UserProgress } from '../types.ts';
+import Logo from './Logo.tsx';
+import GhanaFlag from './GhanaFlag.tsx';
 
 interface OnboardingProps {
   onComplete: (userData: Partial<UserProgress>) => void;

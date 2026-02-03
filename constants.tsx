@@ -1,5 +1,5 @@
 
-import { Lesson, Badge, LevelQuiz } from './types';
+import { Lesson, Badge, LevelQuiz } from './types.ts';
 
 export const LESSONS: Lesson[] = [
   // LEVEL 1: VILLAGE ENTRANCE (THE FOUNDATION)

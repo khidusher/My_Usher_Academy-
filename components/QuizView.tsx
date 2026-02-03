@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { LevelQuiz, QuizQuestion } from '../types';
+import { LevelQuiz, QuizQuestion } from '../types.ts';
 
 interface QuizViewProps {
   quiz: LevelQuiz;

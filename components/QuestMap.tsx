@@ -1,7 +1,7 @@
 
 import React, { useMemo } from 'react';
-import { Lesson, UserProgress, LevelQuiz } from '../types';
-import GhanaFlag from './GhanaFlag';
+import { Lesson, UserProgress, LevelQuiz } from '../types.ts';
+import GhanaFlag from './GhanaFlag.tsx';
 
 interface QuestMapProps {
   lessons: Lesson[];

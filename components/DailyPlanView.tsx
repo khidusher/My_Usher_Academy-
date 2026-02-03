@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { UserProgress, Lesson } from '../types';
-import { LESSONS } from '../constants';
+import { UserProgress, Lesson } from '../types.ts';
+import { LESSONS } from '../constants.tsx';
 
 interface DailyPlanViewProps {
   user: UserProgress;
@@ -105,6 +105,4 @@ const DailyPlanView: React.FC<DailyPlanViewProps> = ({ user, onUpdateGoal, onSel
       </div>
     </div>
   );
-};
-
-export default DailyPlanView;
+}; export default DailyPlanView;

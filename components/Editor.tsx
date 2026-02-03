@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { runPythonCode } from '../services/pyodideService';
-import { getMentorFeedback } from '../services/geminiService';
+import { runPythonCode } from '../services/pyodideService.ts';
+import { getMentorFeedback } from '../services/geminiService.ts';
 
 interface EditorProps {
   initialCode: string;
