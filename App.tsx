@@ -1,16 +1,16 @@
 
 import React, { useState, useEffect } from 'react';
-import { UserProgress, Lesson, Badge, LevelQuiz } from './types.ts';
-import { LESSONS, BADGES, QUIZZES } from './constants.tsx';
-import Layout from './components/Layout.tsx';
-import QuestMap from './components/QuestMap.tsx';
-import Editor from './components/Editor.tsx';
-import Onboarding from './components/Onboarding.tsx';
-import QuizView from './components/QuizView.tsx';
-import Logo from './components/Logo.tsx';
-import DailyPlanView from './components/DailyPlanView.tsx';
-import PianoMelody from './components/PianoMelody.tsx';
-import { initPyodide } from './services/pyodideService.ts';
+import { UserProgress, Lesson, Badge, LevelQuiz } from './types';
+import { LESSONS, BADGES, QUIZZES } from './constants';
+import Layout from './components/Layout';
+import QuestMap from './components/QuestMap';
+import Editor from './components/Editor';
+import Onboarding from './components/Onboarding';
+import QuizView from './components/QuizView';
+import Logo from './components/Logo';
+import DailyPlanView from './components/DailyPlanView';
+import PianoMelody from './components/PianoMelody';
+import { initPyodide } from './services/pyodideService';
 
 const INITIAL_USER: UserProgress = {
   name: '',
@@ -290,8 +290,8 @@ const App: React.FC = () => {
       )}
 
       {currentView === 'lesson' && activeLesson && (
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 py-4 h-[calc(100vh-140px)]">
-          <div className="flex-1 space-y-6 overflow-y-auto pr-4 custom-scrollbar">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 py-4 lg:h-[calc(100vh-140px)]">
+          <div className="flex-1 space-y-6 lg:overflow-y-auto lg:pr-4 custom-scrollbar">
             <button 
               onClick={() => setCurrentView('map')}
               className="text-sm font-bold text-slate-400 dark:text-slate-500 hover:text-[#1e73ff] transition-colors flex items-center gap-2 mb-4 group"
@@ -326,7 +326,7 @@ const App: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex-1 lg:h-full min-h-[500px]">
+          <div className="flex-1 lg:h-full min-h-[600px] pb-20 lg:pb-0">
             <Editor 
               initialCode={user.autosaveCode[activeLesson.id] || activeLesson.initialCode}
               onSuccess={handleLessonSuccess}
